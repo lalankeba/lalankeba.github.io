@@ -5,102 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lalanke Athauda</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="css/lux/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- navigation bar -->
-    <div>
-        <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Lalanke Athauda</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+    <!-- navbar start -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Lalanke Athauda</a>
+            <ul class="nav-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header start -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <img class="header-image" src="images/lalanke.jpg" alt="">
             </div>
-        </nav>
-    </div>
-    <!-- page content -->
-    <div class="container">
-        <div>
-            <!-- about me -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="display-1">Lalanke Athauda</h1>
-                    <p class="lead">Welcome to my digital space where lines of code meet creativity and innovation. I'm Lalanke Athauda, a seasoned Java developer with a passion for turning complex challenges into elegant solutions.</p>
+            <div class="header-right">
+                <p>Hello, I'm</p>
+                <h1>Lalanke Athauda</h1>
+                <h2>Java Developer</h2>
+                <div class="header-action-area">
+                    <a href="" class="btn">Contact Me</a>
+                    <a href="" class="btn btn-dark">Download CV</a>
                 </div>
-            </div>
-            <!-- skills and techs -->
-            <div class="row" id="skills">
-                <div class="col-lg-12">
-                    <h2>Skills</h2>
-                    <dl>
-                        <dt>Back End</dt><dd>- Java, Spring, Spring Boot, Microservices, APIs (REST and SOAP), JPA/Hibernate, Junit, liquibase, Swagger, Jasper Reports</dd>
-                        <dt>Front End</dt><dd>- JavaScript, AJAX, JSP, Angular, D3</dd>
-                        <dt>Web Technologies</dt><dd>- HTML, CSS, XML, JSON, JQuery, Ajax</dd>
-                        <dt>Database Technologies</dt><dd>- MySQL, Postgress, Oracle</dd>
-                        <dt>Server Technologies</dt><dd>- Apache Tomcat, JBoss</dd>
-                        <dt>Documentation</dt><dd>- Spring REST Docs, AsciiDoc, LATEX, gnuplot</dd>
-                        <dt>Cloud</dt><dd>- Oracle Dev Cloud</dd>
-                        <dt>Software Engineering</dt><dd>- Requirements Elicitation, Estimation, Design, Development, Documentation, Testing, Implementation and deployment and Operational support.</dd>
-                        <dt>Methodologies</dt><dd>- Scrum</dd>
-                        <dt>Operating Systems</dt><dd>- Linux (Ubuntu, Fedora, Centos, Oracle Linux), Windows</dd>
-                        <dt>Code Quality</dt><dd>- Sonarqube, Jacoco</dd>
-                        <dt>Other Technologies</dt><dd>- JIRA, JMeter, Git, GitHub, GitLab, InteliJIDEA, Eclipse, Maven, Ant, SoapUI, Docker, SSH, Bash Scripting, JWT, J8583, jPOS, curl, Postman, ActiveMQ</dd>
-                    </dl>
-                </div>
-            </div>
-            <!-- projects -->
-            <div class="row" id="projects">
-                <div class="col-lg-12">
-                    <h2>Projects</h2>
-                    <ul>
-                        <li>ATM Switch</li>
-                        <li>Inter Bank Transaction Switch</li>
-                        <li>CRIB Report Generator</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- projects -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 id="articles">Articles and Publications</h2>
-                    <dl>
-                        <dt>Introduction to ISO 8583 Messages</dt>
-                        <dd>- <a href="https://medium.com/@lalankeba/introduction-to-iso-8583-messages-3dd732437ad7">https://medium.com/@lalankeba/introduction-to-iso-8583-messages-3dd732437ad7</a></dd>
-                        <dt>Create Simple ISO 8583 Messages Using jPos</dt>
-                        <dd>- <a href="https://medium.com/@lalankeba/create-simple-iso-8583-messages-using-jpos-fe5b47ea4d28">https://medium.com/@lalankeba/create-simple-iso-8583-messages-using-jpos-fe5b47ea4d28</a></dd>
-                        <dt>A M L L B Athauda, E A T A Edirisuriya, Business Process Modeling with Goal Modeling, Proceedings of the International Conference on Multidisciplinary Approaches - 2014.</dt>
-                    </dl>
-                </div>
-            </div>
-            <!-- projects -->
-            <div class="row" id="contact">
-                <div class="col-lg-12">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>lalankeba[at]gmail[dot]com</li>
-                    </ul>
+                <div class="header-social">
+                    <a href=""><img class="header-social-icon" src="images/linkedin.png" alt=""></a>
+                    <a href=""><img class="header-social-icon" src="images/github.png" alt=""></a>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    </header>
+    <!-- header end -->
 </body>
 </html>
