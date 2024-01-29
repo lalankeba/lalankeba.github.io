@@ -158,6 +158,7 @@ header {
     color: black;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
 }
 
 .btn-dark {
@@ -223,4 +224,124 @@ header {
     font-size: 14px;
     line-height: 20px;
     text-align: justify;
+}
+
+/* ------------------------------ experience section styling ------------------------------ */
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.experience-box {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 28px;
+}
+
+.experience-box h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.experiences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.experience {
+    display: flex;
+    gap: 20px;
+    margin: 10px 2px;
+    /* margin: auto; */
+}
+
+.experience img {
+    width: 40px;
+    /* margin: auto; */
+}
+
+/* ------------------------------ projects section styling ------------------------------ */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project-box {
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.project-box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-action-area {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* ------------------------------ contact section styling ------------------------------ */
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-box img {
+    width: 30px;
+}
+
+.contact-box a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ------------------------------ footer styling ------------------------------ */
+
+footer {
+    background-color: #787d84;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-container a {
+    color: black;
 }
