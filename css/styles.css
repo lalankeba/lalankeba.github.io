@@ -74,13 +74,12 @@ nav {
 }
 
 .nav-links {
-    padding: 0; /* can go *{} */
-    list-style: none; /* can go *{} */
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    /* width: 40%; */
+    gap: 30px;
 }
 
 .nav-links li a {
@@ -107,7 +106,6 @@ header {
 
 .header-container {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     justify-content: space-between;
@@ -260,7 +258,7 @@ header {
 
 .experience {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin: 10px 2px;
     /* margin: auto; */
 }
@@ -301,6 +299,44 @@ header {
     display: flex;
     gap: 10px;
     justify-content: space-between;
+}
+
+/* ------------------------------ articles section styling ------------------------------ */
+
+.articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.article-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.article-box:hover {
+    background-color: #c8c9cc;
+    box-shadow: 12px 12px 16px 0 rgb(174, 171, 171);
+}
+
+.article-box img {
+    width: 200px;
+    height: 100%;
+    /* max-height: 120px;
+    min-height: 120px; */
+    border-radius: 30px 0px 0px 30px;
+}
+
+.article-action-area {
+    margin: 30px 0;
+    
+}
+
+.article-action-area h4 {
+    margin-bottom: 10px;
 }
 
 /* ------------------------------ contact section styling ------------------------------ */
