@@ -1,14 +1,4 @@
 @font-face {
-    font-family: 'DM_Sans';
-    src: url(../fonts/DM_Sans/static/DMSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
     font-family: 'Roboto_Slab';
     src: url(../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
 }
