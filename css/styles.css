@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Roboto_Slab';
-    src: url(../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto_Slab';
+    font-family: 'Poppins';
     border: none;
     outline: none;
     letter-spacing: 1px;
@@ -148,12 +148,14 @@ header {
 .btn {
     border: 1px solid #343A40;
     border-radius: 30px;
-    width: 160px;
     padding: 1em 2em;
     color: black;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-dark {
@@ -288,8 +290,12 @@ header {
 .project-action-area {
     margin: 20px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-between;
+}
+
+.project-action-area a {
+    width: 100%;
 }
 
 /* ------------------------------ articles section styling ------------------------------ */
