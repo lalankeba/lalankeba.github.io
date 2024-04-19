@@ -15,10 +15,10 @@ export const About = () => {
               About Me
             </Typography>
             <Typography variant="body1" align="justify" gutterBottom>
-              Hi there, I&apos;m Lalanke Athauda, and I find joy in crafting the behind-the-scenes magic of the internet. My fascination with software development ignited in 2008, when I delved into learning Java. Since then, I've been fortunate to contribute to various organizations. Currently, my focus is on crafting compelling frontend experiences.
+              Hi there, I&apos;m Lalanke Athauda, and I find joy in crafting the behind-the-scenes magic of the internet. My fascination with software development ignited in 2008, when I delved into learning Java. Since then, I&apos;ve been fortunate to contribute to various organizations. Currently, my focus is on crafting compelling frontend experiences.
             </Typography>
             <Typography variant="body1" align="justify">
-              With extensive experience under my belt, I bring a wealth of expertise as a seasoned software engineer. I specialize in Java development, particularly in crafting robust and scalable applications using the Spring and Spring Boot frameworks. Throughout my career, I've maintained a strong dedication to writing clean and sustainable code, recognizing its pivotal role in software development.
+              With extensive experience under my belt, I bring a wealth of expertise as a seasoned software engineer. I specialize in Java development, particularly in crafting robust and scalable applications using the Spring and Spring Boot frameworks. Throughout my career, I&apos;ve maintained a strong dedication to writing clean and sustainable code, recognizing its pivotal role in software development.
             </Typography>
           </Grid>
         </Grid>
