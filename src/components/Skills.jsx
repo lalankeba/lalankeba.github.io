@@ -1,6 +1,9 @@
+import { Container } from "@mui/material"
 
 export const Skills = () => {
   return (
-    <div>Skills</div>
+    <Container maxWidth="lg">
+        <div>Skills</div>
+    </Container>
   )
 }
