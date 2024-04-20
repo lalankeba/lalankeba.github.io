@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
 
-const pages = ['About', 'Experience', 'Projects', 'Articles', 'Contact'];
+const pages = ['About', 'Skills', 'Projects', 'Articles', 'Contact'];
 
 export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
