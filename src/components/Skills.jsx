@@ -1,4 +1,4 @@
-import { Box, Chip, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Chip, Container, Grid, Typography } from "@mui/material";
 
 export const Skills = () => {
 
@@ -18,7 +18,7 @@ export const Skills = () => {
     {id: 2, label: 'Spring'},
     {id: 3, label: 'Springboot'},
     {id: 4, label: 'JPA/Hibernate'},
-    {id: 4, label: 'Liquibase'},
+    {id: 5, label: 'Liquibase'},
   ];
 
   const databaseSkills = [
