@@ -1,14 +1,14 @@
 import { Box, Container, Grid, Typography } from "@mui/material"
-import aboutImage from '../assets/lalanke.jpg'
+import aboutImage from '../assets/lalanke.jpg';
 
 export const About = () => {
   return (
-    <Box py={2}>
+    <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
-        <Grid container spacing={4} >
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={6} display="flex" alignItems="center" justifyContent="center">
             <img src={aboutImage} alt="Lalanke Athauda" 
-              style={{width: 380, borderRadius: '50%', display: 'block', margin: 'auto'}} />
+              style={{width: '100%', maxWidth: 360, borderRadius: '50%', display: 'block', margin: 'auto'}} />
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant='h2' gutterBottom textAlign="center">
