@@ -30,7 +30,7 @@ export const Projects = () => {
   return (
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
-        <Typography variant="h2" gutterBottom>My Projects</Typography>
+        <Typography variant="h2" gutterBottom>Recent Projects</Typography>
         <Grid container spacing={4}>
           { projects.map((project) => (
             <Grid key={project.id} item xs={12} sm={6} md={4}>
