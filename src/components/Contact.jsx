@@ -17,7 +17,7 @@ export const Contact = () => {
         <Typography variant="h2" gutterBottom>Contact Me</Typography>
         <Box display="flex" flexWrap="wrap" alignItems="center" mt={1} gap={6} >
           <Paper elevation={12} sx={{ py: 1, px: 2}}>
-            <Link href={`mailto:${email}`} rel>
+            <Link href={`mailto:${email}`} rel="noreferrer">
               <Box display="inline-flex" alignItems="center" sx={{ mt: 0.5 }}>
                 <EmailIcon sx={{ marginRight: 1 }} /> {email}
               </Box>

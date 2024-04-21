@@ -45,7 +45,7 @@ export const Projects = () => {
           { projects.map((project) => (
             <Grid key={project.id} item xs={12} sm={6} md={4}>
               <Card>
-                <CardActionArea component={Link} to={`/project/${project.id}`}>
+                <CardActionArea component={Link} to={`/projects/${project.id}`}>
                   <CardMedia sx={{ height: 160 }} image={`/projects/${project.image}`} title={`${project.title}`} />
                   <CardContent>
                     <Typography variant="h5" component="div">{project.title}</Typography>

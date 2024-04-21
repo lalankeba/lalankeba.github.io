@@ -13,7 +13,7 @@ export const MediumIcon = ({color, sx}) => {
             style={{ marginRight: sx.marginRight }}
             stroke="currentColor"
             xmlns="http://www.w3.org/2000/svg" 
-            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            xmlnsXlink="http://www.w3.org/1999/xlink" 
             preserveAspectRatio="xMidYMid"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
