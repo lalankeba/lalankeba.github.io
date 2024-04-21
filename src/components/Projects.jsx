@@ -24,6 +24,16 @@ export const Projects = () => {
       title: "Memory Game", 
       image: "js-memory-game.png",
       shortDesc: "Simple memory game made with basic web technologies"
+    }, { 
+      id: 5, 
+      title: "Weather Dashboard", 
+      image: "weather-dashboard.png",
+      shortDesc: "Weather app for any location using openweathermap.org"
+    }, { 
+      id: 6, 
+      title: "Culinary Voyage", 
+      image: "culinary-voyage.jpg",
+      shortDesc: "Shows how to make meals and cocktails using mealsdb and cokctailsdb"
     }
   ];
 
@@ -31,7 +41,7 @@ export const Projects = () => {
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
         <Typography variant="h2" gutterBottom>Recent Projects</Typography>
-        <Grid container spacing={4}>
+        <Grid container spacing={4} mt={1}>
           { projects.map((project) => (
             <Grid key={project.id} item xs={12} sm={6} md={4}>
               <Card>
