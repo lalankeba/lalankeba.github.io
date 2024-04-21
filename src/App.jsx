@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { BottomBar } from './components/BottomBar';
+import { Project } from './pages/Project';
 
 const theme = createTheme({
   palette: {
@@ -31,7 +32,7 @@ function App() {
               <Routes>
                 <Route index element={ <Home /> }></Route>
                 <Route path='home' element={ <Home /> }></Route>
-                <Route path='projects/:id' element={ <Home /> }></Route>
+                <Route path='projects/:id' element={ <Project /> }></Route>
                 <Route path='*' element={ <NotFound /> }></Route>
               </Routes>
             </main>
