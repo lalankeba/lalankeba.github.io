@@ -39,7 +39,7 @@ export const Articles = () => {
                   <Typography variant="h6">{article.title}</Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" href={`${article.url}`} target="_blank" rel="noreferrer" endIcon={<ArrowOutwardIcon />}>Read</Button>
+                  <Button size="small" href={`${article.url}`} target="_blank" rel="noreferrer" endIcon={<ArrowOutwardIcon />}>Read</Button>
                 </CardActions>
               </Card>
             </Grid>
