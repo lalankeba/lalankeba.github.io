@@ -1,4 +1,5 @@
 import { Box, Chip, Container, Grid, Typography } from "@mui/material";
+import { AnchorSpacer } from "./AnchorSpacer";
 
 export const Skills = () => {
 
@@ -29,6 +30,8 @@ export const Skills = () => {
   ];
 
   return (
+    <>
+    <AnchorSpacer id="Skills" />
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
         <Typography variant="h2" gutterBottom>My Skills</Typography>
@@ -64,5 +67,6 @@ export const Skills = () => {
         
       </Container>
     </Box>
+    </>
   );
 }

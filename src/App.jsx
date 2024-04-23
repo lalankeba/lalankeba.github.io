@@ -1,6 +1,6 @@
 import './App.css';
 import { Navbar } from './components/Navbar';
-import { brown, cyan, teal } from '@mui/material/colors';
+import { teal, blueGrey } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
@@ -10,8 +10,8 @@ import { Project } from './pages/Project';
 
 const theme = createTheme({
   palette: {
-    primary: brown,
-    secondary: cyan
+    primary: blueGrey,
+    secondary: teal
   },
   typography: {
     fontFamily: 'Quicksand'

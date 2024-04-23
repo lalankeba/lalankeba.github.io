@@ -1,5 +1,6 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { AnchorSpacer } from "./AnchorSpacer";
 
 export const Projects = () => {
 
@@ -38,6 +39,8 @@ export const Projects = () => {
   ];
 
   return (
+    <>
+    <AnchorSpacer id="Projects" />
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
         <Typography variant="h2" gutterBottom>Recent Projects</Typography>
@@ -59,5 +62,6 @@ export const Projects = () => {
 
       </Container>
     </Box>
+    </>
   )
 }

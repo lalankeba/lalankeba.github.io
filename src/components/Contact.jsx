@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { MediumIcon } from "../icons/MediumIcon";
 import { useTheme } from "@emotion/react";
+import { AnchorSpacer } from "./AnchorSpacer";
 
 export const Contact = () => {
   const theme = useTheme();
@@ -12,6 +13,8 @@ export const Contact = () => {
 
 
   return (
+    <>
+    <AnchorSpacer id="Contact" />
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
         <Typography variant="h2" gutterBottom>Contact Me</Typography>
@@ -47,5 +50,6 @@ export const Contact = () => {
         </Box>
       </Container>
     </Box>
+    </>
   )
 }

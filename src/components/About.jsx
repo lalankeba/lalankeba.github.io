@@ -1,8 +1,11 @@
 import { Box, Container, Grid, Typography } from "@mui/material"
 import aboutImage from '../assets/lalanke.jpg';
+import { AnchorSpacer } from "./AnchorSpacer";
 
 export const About = () => {
   return (
+    <>
+    <AnchorSpacer id="About" />
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
@@ -24,5 +27,6 @@ export const About = () => {
         </Grid>
       </Container>
     </Box>
+    </>
   )
 }

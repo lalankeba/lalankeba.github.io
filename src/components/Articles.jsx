@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material"
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { AnchorSpacer } from "./AnchorSpacer";
 
 export const Articles = () => {
   const articles = [
@@ -27,6 +28,8 @@ export const Articles = () => {
   ];
 
   return (
+    <>
+    <AnchorSpacer id="Articles" />
     <Box component="section" py={2} my={10}>
       <Container maxWidth="lg" >
         <Typography variant="h2" gutterBottom>Articles</Typography>
@@ -47,5 +50,6 @@ export const Articles = () => {
         </Grid>
       </Container>
     </Box>
+    </>
   )
 }

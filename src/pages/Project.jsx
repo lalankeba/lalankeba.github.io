@@ -72,7 +72,9 @@ export const Project = () => {
   return (
     <Box component="section" py={2} my={4}>
       <Container maxWidth="lg">
-        { error && <div>Cannot find any project for id: {id}</div> }
+        { error && 
+        <Typography variant="h5">Cannot find any project for id: <em>{id}</em></Typography> 
+        }
         { project && 
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={4} lg={3}>

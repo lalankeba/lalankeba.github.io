@@ -9,8 +9,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
+import { styled } from '@mui/material';
 
 const pages = ['About', 'Skills', 'Projects', 'Articles', 'Contact'];
+
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -24,7 +27,8 @@ export const Navbar = () => {
     };
   
     return (
-      <AppBar position="sticky">
+      <>
+      <AppBar position="fixed">
         <Container maxWidth="lg">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap component="a" href="/"
@@ -34,6 +38,7 @@ export const Navbar = () => {
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                fontWeight: 'bold',
                 flexGrow: 0
               }}
             >
@@ -53,14 +58,14 @@ export const Navbar = () => {
                 open={Boolean(anchorElNav)} onClose={handleCloseNavMenu}
                 sx={{ display: { xs: 'block', sm: 'none' }, }} >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem key={page} onClick={handleCloseNavMenu} component="a" href={"/#" + page}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
             
-            <Typography variant="h5" noWrap component="a" href="#app-bar-with-responsive-menu"
+            <Typography variant="h5" noWrap component="a" href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', sm: 'none' },
@@ -76,7 +81,7 @@ export const Navbar = () => {
             <Box sx={{ flexGrow: 0, marginLeft: 'auto', display: { xs: 'none', sm: 'flex' } }}>
               {pages.map((page) => (
                 <Button key={page} onClick={handleCloseNavMenu}
-                  href={ "/home#" + page}
+                  href={ "/#" + page}
                   sx={{ my: 2, color: 'white', display: 'block' }} >
                   {page}
                 </Button>
@@ -86,5 +91,7 @@ export const Navbar = () => {
           </Toolbar>
         </Container>
       </AppBar>
+      <Offset />
+      </>
     );
 }
