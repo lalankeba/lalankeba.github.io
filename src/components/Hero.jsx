@@ -3,7 +3,7 @@ import { Box, Container, Typography } from "@mui/material"
 export const Hero = () => {
   return (
     <Box component="section" px={2} gap={4} sx={{ 
-      backgroundColor: '#795548',
+      backgroundColor: '#486470',
       backgroundImage: `linear-gradient(to bottom, transparent 70%, #ffffff), url('/hero-back-0.jpg')`,
       backgroundSize: 'cover',
       height: '92dvh',
