@@ -2,6 +2,9 @@
 
 Portfolio website created with React for Lalanke Athauda.
 
+## Install dependencies
+`npm install`
+
 ## Run dev server
 `npm run dev`
 
