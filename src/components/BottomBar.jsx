@@ -26,8 +26,8 @@ export const BottomBar = () => {
             </DialogTitle>
             <DialogContent>
               <DialogContentText id="dialog-description">
-                <Typography variant="body2">I would like to express my deepest gratitude to everyone who has supported me on my journey. A special thanks to my mentors, Lakshitha Nalindanath, Towfiqul Alom and Safiul Alam, for their invaluable guidance and encouragement. Their insights have greatly shaped my work and career.</Typography>
-                <Typography variant="body2">Finally, I would like to thank my family for their unwavering support and encouragement. Without them, none of this would be possible.</Typography>
+                <Typography variant="body1" gutterBottom textAlign={"justify"}>I would like to express my deepest gratitude to everyone who has supported me on my journey. A special thanks to my mentors, <em>Lakshitha Nalindanath</em>, <em>Towfiqul Alom</em> and <em>Safiul Alam</em>, for their invaluable guidance and encouragement. Their insights have greatly shaped my work and career.</Typography>
+                <Typography variant="body1" textAlign={"justify"}>Finally, I would like to thank my family for their unwavering support and encouragement. Without them, none of this would be possible.</Typography>
               </DialogContentText>
             </DialogContent>
             <DialogActions>
