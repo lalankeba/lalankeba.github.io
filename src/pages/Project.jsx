@@ -15,7 +15,7 @@ export const Project = () => {
       image: "atm-switch.png",
       shortDesc: "ATM Switch developed using ISO 8583 messaging protocol",
       description: "The ATM Switch project involves the design, development, documentation, and maintenance of a key banking infrastructure component supporting three national banks in Sri Lanka and two overseas financial institutions in Zambia and Pakistan. Acting as a server, the ATM Switch listens to incoming ISO 8583 messages via a TCP/IP tunnel, converts them into JSON format, and then routes them to Core bank REST APIs. This switch plays a crucial role in streamlining ATM transactions and ensuring seamless communication between banking systems across different regions.",
-      tools: ["Java", "Spring Boot", "J8584", "jPOS", "AsciiDoc", "Liquibase", "Hibernate", "REST APIs", "MySQL", "Oracle DB", "LaTex", "Git", "Maven", "SSH", "JBoss"],
+      tools: ["Java", "Spring Boot", "J8583", "jPOS", "AsciiDoc", "Liquibase", "Hibernate", "REST APIs", "MySQL", "Oracle DB", "LaTex", "Git", "Maven", "SSH", "JBoss"],
       gitUrl: null,
       liveUrl: null
     }, { 
@@ -24,7 +24,7 @@ export const Project = () => {
       image: "ibth.png",
       shortDesc: "Inter bank transaction switch using ISO 8583 messages",
       description: "Leading the Inter Bank Transaction Hub (IBTH) involves overseeing the complete lifecycle of a critical banking project. This includes the design, development, documentation, testing, and ongoing maintenance of the system. IBTH is responsible for switching and routing ISO 8583 messages to REST services, enabling seamless inter-bank transactions. It collaborates with Sri Lanka's National Payment Network (CEFTS), ensuring efficient and secure payment processing across the country's banking ecosystem.",
-      tools: ["Java", "Spring Boot", "J8584", "AsciiDoc", "Liquibase", "Hibernate", "REST APIs", "Oracle DB", "LaTex", "Git", "Maven", "SSH", "JBoss"],
+      tools: ["Java", "Spring Boot", "J8583", "AsciiDoc", "Liquibase", "Hibernate", "REST APIs", "Oracle DB", "LaTex", "Git", "Maven", "SSH", "JBoss"],
       gitUrl: null,
       liveUrl: null
     }, { 

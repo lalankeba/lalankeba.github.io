@@ -8,15 +8,20 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { styled } from '@mui/material';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { useTheme } from '@mui/material/styles';
 
 const pages = ['About', 'Skills', 'Projects', 'Articles', 'Contact'];
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
-export const Navbar = () => {
+export const Navbar = ({toggleTheme}) => {
     const [anchorElNav, setAnchorElNav] = useState(null);
+    const theme = useTheme();
+    const [isLight, setIsLight] = useState(true);
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
@@ -25,6 +30,10 @@ export const Navbar = () => {
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
+
+    useEffect(() => {
+      theme.palette.mode === 'light' ? setIsLight(true) : setIsLight(false);
+    }, [theme.palette.mode]);
   
     return (
       <>
@@ -86,6 +95,12 @@ export const Navbar = () => {
                   {page}
                 </Button>
               ))}
+            </Box>
+            <Box sx={{ flexGrow: 0, marginLeft: '1', display: { xs: 'flex' } }}>
+              <IconButton onClick={toggleTheme} color="secondary" aria-label="change theme">
+                { isLight && <DarkModeIcon /> }
+                { !isLight && <LightModeIcon /> }
+              </IconButton>
             </Box>
   
           </Toolbar>

@@ -17,9 +17,9 @@ export const BottomBar = () => {
     <Box py={0} my={0}>
       <Divider />
       <Container maxWidth="lg">
-        <Box display="flex" flexWrap="wrap" alignItems="center" my={4} justifyContent="space-between" >
+        <Box display="flex" flexWrap="wrap" alignItems="center" py={4} justifyContent="space-between" >
           <Typography sx={{ pl: 1 }}>Designed & Built by Lalanke Athauda</Typography>
-          <Button onClick={openDialog}>Acknowledgements</Button>
+          <Button onClick={openDialog} color="warning">Acknowledgements</Button>
           <Dialog open={open} onClose={closeDialog} aria-labelledby="dialog-title" aria-describedby="dialog-description">
             <DialogTitle id="dialog-title">
               Acknowledgements
