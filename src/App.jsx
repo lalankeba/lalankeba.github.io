@@ -7,9 +7,12 @@ import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { BottomBar } from './components/BottomBar';
 import { Project } from './pages/Project';
+import { useState } from 'react';
+import { Box, CssBaseline } from '@mui/material';
 
-const theme = createTheme({
+const lightTheme = createTheme({
   palette: {
+    mode: 'light',
     primary: blueGrey,
     secondary: teal
   },
@@ -18,15 +21,31 @@ const theme = createTheme({
   }
 });
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark'
+  },
+  typography: {
+    fontFamily: 'Quicksand'
+  }
+});
+
 function App() {
+
+  const [theme, setTheme] = useState(lightTheme);
+
+  const toggleTheme = () => {
+    theme === lightTheme ? setTheme(darkTheme) : setTheme(lightTheme);
+  }
 
   return (
     <>
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <div className='app'>
+          <CssBaseline />
+          <Box className='app'>
             <header>
-              <Navbar />
+              <Navbar toggleTheme={toggleTheme} />
             </header>
             <main>
               <Routes>
@@ -39,7 +58,7 @@ function App() {
             <footer>
               <BottomBar />
             </footer>
-          </div>
+          </Box>
         </ThemeProvider>
       </BrowserRouter>
     </>
