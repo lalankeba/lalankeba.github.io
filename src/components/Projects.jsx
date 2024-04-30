@@ -2,41 +2,7 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typ
 import { Link } from "react-router-dom";
 import { AnchorSpacer } from "./AnchorSpacer";
 
-export const Projects = () => {
-
-  const projects = [
-    { 
-      id: 1, 
-      title: "ATM Switch", 
-      image: "atm-switch.png",
-      shortDesc: "ATM Switch developed using ISO 8583 messaging protocol"
-    }, { 
-      id: 2, 
-      title: "IBTH", 
-      image: "ibth.png",
-      shortDesc: "Inter bank transaction switch using ISO 8583 messages"
-    }, { 
-      id: 3, 
-      title: "Sports Data Analyzer", 
-      image: "sportsda.png",
-      shortDesc: "Web based system to collect and analyze sports data"
-    }, { 
-      id: 4, 
-      title: "Memory Game", 
-      image: "js-memory-game.png",
-      shortDesc: "Simple memory game made with basic web technologies"
-    }, { 
-      id: 5, 
-      title: "Weather Dashboard", 
-      image: "weather-dashboard.png",
-      shortDesc: "Weather app for any location using openweathermap.org"
-    }, { 
-      id: 6, 
-      title: "Culinary Voyage", 
-      image: "culinary-voyage.jpg",
-      shortDesc: "Shows how to make meals and cocktails using mealsdb and cokctailsdb"
-    }
-  ];
+export const Projects = ({projects}) => {
 
   return (
     <>
