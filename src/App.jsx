@@ -62,11 +62,15 @@ const projects = [
     id: 4, 
     title: "Memory Game", 
     image: "js-memory-game.png",
-    shortDesc: "Simple memory game made with basic web technologies",
-    descriptions: ["A simple memory game built with basic web technologies HTML, JavaScript, and CSS offers a fun and interactive way to test players' memory skills. The game consists of a grid of cards that flip to reveal matching pairs. It allows players to change the number of cards letting users adjust the game's difficulty.  JavaScript handles the game logic, ensuring smooth gameplay, while CSS provides the visual styling and animations."],
-    tools: ["HTML", "CSS", "Javascript", "VS Code"],
-    gitUrl: null,
-    liveUrl: null
+    shortDesc: "Simple memory game made with React and basic web technologies",
+    descriptions: [
+      "A simple memory game built during the leisure time and built with React, MUI grid system and basic web technologies. This game is a fun and interactive way to test players' memory skills.",
+      "The game consists of a grid of cards that flip to reveal matching pairs. It allows players to change the number of cards letting users adjust the game's difficulty. JavaScript handles the game logic, ensuring smooth gameplay, while React MUI components provide the visual styling and animations.",
+      "App always keeps track of user's device screen size and change the grid system. Player can toggle between light and dark modes."
+    ],
+    tools: ["React", "MUI", "HTML", "CSS", "Javascript", "VS Code"],
+    gitUrl: "https://github.com/lalankeba/memory-game",
+    liveUrl: "https://memory-game-lalanke.vercel.app/"
   }, { 
     id: 5, 
     title: "Weather Dashboard", 
