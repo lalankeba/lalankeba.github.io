@@ -31,8 +31,34 @@ const darkTheme = createTheme({
 });
 
 const projects = [
-  { 
-    id: 1, 
+  {
+    id: 2, 
+    title: "Carmax Auto Repair", 
+    image: "carmax-autorepair.png",
+    shortDesc: "Dynamic repair center app with dark theme, image gallery, animations, and multilingual support.",
+    descriptions: [
+      "This vehicle repair web app, built with Next.js and React-Bootstrap, provides a sleek, powerful browsing experience. With next-intl, users can toggle between languages for a more accessible and user-friendly interaction. A smooth scroll navigation system allows users to move easily between sections, enhancing the overall flow of the site.",
+      "The app also includes a dynamic image gallery, crafted with react-masonry-css, Swiper, and yet-another-react-lightbox, enabling users to click on images and view them in an enlarged lightbox format. This feature showcases vehicles with striking clarity and detail, adding visual depth and interactivity to the user experience.",
+      "Designed with a dark theme, the app uses bold foreground and background images to create a vibrant, powerful aesthetic. Framer Motion animations add a modern touch, making navigation smooth and engaging, while the robust design emphasizes the quality and strength associated with automotive repair services."
+    ],
+    tools: ["React.js", "Next.js", "Typescript", "React-bootstrap", "framer motion", "next-intl", "Swiper", "yet-another-react-lightbox", "react-masonry-css", "SCSS", "Git", "npm"],
+    gitUrl: "https://github.com/lalankeba/carmax-app",
+    liveUrl: "https://carmax-autorepair.vercel.app"
+  }, {
+    id: 3, 
+    title: "Lecurer Portfolio", 
+    image: "lecturer-portfolio.png",
+    shortDesc: "Modern, dynamic portfolio with multi-language support, theme toggle, animations, and more..",
+    descriptions: [
+      "This portfolio web app is built with Next.js and React-Bootstrap, optimized for responsiveness and accessibility. Leveraging next-intl for seamless language switching, it supports internationalization and includes essential pages like privacy-policy, not-found, and loading to ensure a smooth user experience.",
+      "The app features dynamic theme switching between light and dark modes and a \"Contact\" page where users can reach out to the lecturer. The contact form, built with Formik, integrates with a Node.js Express backend that processes messages and sends emails directly to the lecturer, streamlining communication.",
+      "Subtle Framer Motion animations enhance interactivity, while a slowly transitioning background image adds depth. Thoughtfully selected font colors and fades maintain readability, making the app visually dynamic yet user-friendly. These details together create a modern, immersive experience that highlights the best of Next.js and React's capabilities."
+    ],
+    tools: ["React.js", "Next.js", "Typescript", "React-bootstrap", "formik", "framer motion", "next-intl", "react-toastify", "SCSS", "Node.js", "Express", "nodemailer", "winston", "rate-limit", "Git", "npm"],
+    gitUrl: "https://github.com/mkanuradhi/mkanuradhi-app",
+    liveUrl: "https://www.mkanuradhi.com"
+  }, {
+    id: 4, 
     title: "ATM Switch", 
     image: "atm-switch.png",
     shortDesc: "ATM Switch developed using ISO 8583 messaging protocol",
@@ -40,8 +66,8 @@ const projects = [
     tools: ["Java", "Spring Boot", "J8583", "jPOS", "AsciiDoc", "Liquibase", "Hibernate", "REST APIs", "MySQL", "Oracle DB", "LaTex", "Git", "Maven", "SSH", "JBoss"],
     gitUrl: null,
     liveUrl: null
-  }, { 
-    id: 2, 
+  }, {
+    id: 5, 
     title: "IBTH", 
     image: "ibth.png",
     shortDesc: "Inter bank transaction switch using ISO 8583 messages",
@@ -50,7 +76,7 @@ const projects = [
     gitUrl: null,
     liveUrl: null
   }, { 
-    id: 3, 
+    id: 6, 
     title: "Sports Data Analyzer", 
     image: "sportsda.png",
     shortDesc: "Web based system to collect and analyze sports data",
@@ -59,7 +85,7 @@ const projects = [
     gitUrl: null,
     liveUrl: null
   }, { 
-    id: 4, 
+    id: 7, 
     title: "Memory Game", 
     image: "js-memory-game.png",
     shortDesc: "Simple memory game made with React and basic web technologies",
@@ -72,7 +98,7 @@ const projects = [
     gitUrl: "https://github.com/lalankeba/memory-game",
     liveUrl: "https://memory-game-lalanke.vercel.app/"
   }, { 
-    id: 5, 
+    id: 8, 
     title: "Weather Dashboard", 
     image: "weather-dashboard.png",
     shortDesc: "Weather app for any location using openweathermap.org",
@@ -84,7 +110,7 @@ const projects = [
     gitUrl: "https://github.com/lalankeba/weather-dashboard",
     liveUrl: "https://weather-dashboard-lalanke.netlify.app/"
   }, { 
-    id: 6, 
+    id: 9, 
     title: "Culinary Voyage", 
     image: "culinary-voyage.jpg",
     shortDesc: "Shows how to make meals and cocktails using mealsdb and cokctailsdb",
