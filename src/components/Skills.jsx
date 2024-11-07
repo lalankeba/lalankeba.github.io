@@ -28,7 +28,7 @@ export const Skills = () => {
     {id: 2, label: 'PostgreSQL'},
     {id: 3, label: 'Oracle'},
     {id: 4, label: 'MariaDB'},
-    {id: 4, label: 'MongoDB'},
+    {id: 5, label: 'MongoDB'},
   ];
 
   return (
