@@ -46,7 +46,7 @@ const projects = [
     liveUrl: "https://carmax-autorepair.vercel.app"
   }, {
     id: 3, 
-    title: "Lecurer Portfolio", 
+    title: "Lecturer Portfolio", 
     image: "lecturer-portfolio.png",
     shortDesc: "Modern, dynamic portfolio with multi-language support, theme toggle, animations, and more..",
     descriptions: [
