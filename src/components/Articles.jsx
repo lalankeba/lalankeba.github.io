@@ -36,7 +36,7 @@ export const Articles = () => {
         <Grid container spacing={4} mt={1}>
           { articles.map((article) => (
             <Grid key={article.id} item xs={12} sm={6} md={4}>
-              <Card>
+              <Card elevation={4}>
                 <CardMedia sx={{ height: 140 }} image={`/articles/${article.image}`} />
                 <CardContent sx={{ minHeight: 62 }}>
                   <Typography variant="h6">{article.title}</Typography>
