@@ -13,7 +13,7 @@ export const Projects = ({projects}) => {
         <Grid container spacing={4} mt={1}>
           { projects.map((project, index) => (
             <Grid key={index} item xs={12} sm={6} md={4}>
-              <Card>
+              <Card elevation={4}>
                 <CardActionArea component={Link} to={`/projects/${project.id}`}>
                   <CardMedia sx={{ height: 160 }} image={`/projects/${project.image}`} title={`${project.title}`} />
                   <CardContent>
