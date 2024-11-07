@@ -18,8 +18,9 @@ export const Skills = () => {
     {id: 1, label: 'Java'},
     {id: 2, label: 'Spring'},
     {id: 3, label: 'Springboot'},
-    {id: 4, label: 'JPA/Hibernate'},
-    {id: 5, label: 'Liquibase'},
+    {id: 4, label: 'Liquibase'},
+    {id: 5, label: 'Node.js'},
+    {id: 6, label: 'Express'},
   ];
 
   const databaseSkills = [
@@ -27,6 +28,7 @@ export const Skills = () => {
     {id: 2, label: 'PostgreSQL'},
     {id: 3, label: 'Oracle'},
     {id: 4, label: 'MariaDB'},
+    {id: 4, label: 'MongoDB'},
   ];
 
   return (
