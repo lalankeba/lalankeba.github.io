@@ -3,43 +3,67 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import { useEffect, useState } from 'react';
-import { styled } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { Divider, Drawer, List, ListItem, ListItemButton, ListItemText, styled } from '@mui/material';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useTheme } from '@mui/material/styles';
 
+const drawerWidth = 240;
 const pages = ['About', 'Skills', 'Projects', 'Articles', 'Contact'];
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
-export const Navbar = ({toggleTheme}) => {
-    const [anchorElNav, setAnchorElNav] = useState(null);
+export const Navbar = ({ window, toggleTheme }) => {
     const theme = useTheme();
     const [isLight, setIsLight] = useState(true);
-  
-    const handleOpenNavMenu = (event) => {
-      setAnchorElNav(event.currentTarget);
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    const handleDrawerToggle = () => {
+      setMobileOpen((prevState) => !prevState);
     };
   
-    const handleCloseNavMenu = () => {
-      setAnchorElNav(null);
-    };
+    const drawer = (
+      <Box onClick={handleDrawerToggle} sx={{ }}>
+        <Typography variant="h6" sx={{ my: 2, mx: 2, textAlign: 'left' }}>
+          Lalanke
+        </Typography>
+        <Divider />
+        <List>
+          {pages.map((page) => (
+            <ListItem key={page} disablePadding>
+              <ListItemButton sx={{ textAlign: 'left' }} component="a" href={`/#${page}`}>
+                <ListItemText primary={page} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Box>
+    );
 
     useEffect(() => {
       theme.palette.mode === 'light' ? setIsLight(true) : setIsLight(false);
     }, [theme.palette.mode]);
+
+    const container = window !== undefined ? () => window().document.body : undefined;
   
     return (
       <>
-      <AppBar position="fixed">
+      <AppBar position="fixed" component="nav">
         <Container maxWidth="lg">
           <Toolbar disableGutters>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
             <Typography variant="h6" noWrap component="a" href="/"
               sx={{
                 mr: 2,
@@ -53,26 +77,6 @@ export const Navbar = ({toggleTheme}) => {
             >
                 Lalanke Athauda
             </Typography>
-  
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }}>
-              <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar"
-                aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
-                <MenuIcon />
-              </IconButton>
-              <Menu id="menu-appbar" anchorEl={anchorElNav} 
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'left',
-                }} 
-                keepMounted 
-                transformOrigin={{ vertical: 'top', horizontal: 'left' }}
-                open={Boolean(anchorElNav)} onClose={handleCloseNavMenu}
-                sx={{ display: { xs: 'block', sm: 'none' }, }} >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu} component="a" href={"/#" + page}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
             
             <Typography variant="h5" noWrap component="a" href="/"
               sx={{
@@ -89,8 +93,8 @@ export const Navbar = ({toggleTheme}) => {
             </Typography>
             <Box sx={{ flexGrow: 0, marginLeft: 'auto', display: { xs: 'none', sm: 'flex' } }}>
               {pages.map((page) => (
-                <Button key={page} onClick={handleCloseNavMenu}
-                  href={ "/#" + page}
+                <Button key={page}
+                  href={`/#${page}`}
                   sx={{ my: 2, color: 'white', display: 'block' }} >
                   {page}
                 </Button>
@@ -106,6 +110,23 @@ export const Navbar = ({toggleTheme}) => {
           </Toolbar>
         </Container>
       </AppBar>
+      <nav>
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true,
+          }}
+          sx={{
+            display: { xs: 'block', sm: 'none' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </nav>
       <Offset />
       </>
     );
