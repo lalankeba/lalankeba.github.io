@@ -41,7 +41,7 @@ const projects = [
       "The app also includes a dynamic image gallery, crafted with react-masonry-css, Swiper, and yet-another-react-lightbox, enabling users to click on images and view them in an enlarged lightbox format. This feature showcases vehicles with striking clarity and detail, adding visual depth and interactivity to the user experience.",
       "Designed with a dark theme, the app uses bold foreground and background images to create a vibrant, powerful aesthetic. Framer Motion animations add a modern touch, making navigation smooth and engaging, while the robust design emphasizes the quality and strength associated with automotive repair services."
     ],
-    tools: ["React.js", "Next.js", "Typescript", "React-bootstrap", "framer motion", "next-intl", "Swiper", "yet-another-react-lightbox", "react-masonry-css", "SCSS", "Git", "npm"],
+    tools: ["React.js", "Next.js", "Typescript", "React-bootstrap", "framer motion", "next-intl", "Swiper", "Google maps embed API", "yet-another-react-lightbox", "react-masonry-css", "SCSS", "Git", "npm"],
     gitUrl: "https://github.com/lalankeba/carmax-app",
     liveUrl: "https://carmax-autorepair.vercel.app"
   }, {
