@@ -5,22 +5,24 @@ export const Skills = () => {
 
   const frontendSkills = [
     {id: 1, label: 'React'},
-    {id: 2, label: 'HTML'},
-    {id: 3, label: 'CSS'},
-    {id: 4, label: 'Javascript'},
-    {id: 5, label: 'Angular'},
-    {id: 6, label: 'Bootstrap'},
-    {id: 7, label: 'D3'},
-    {id: 8, label: 'JSP'},
+    {id: 2, label: 'Next.js'},
+    {id: 3, label: 'HTML'},
+    {id: 4, label: 'CSS'},
+    {id: 5, label: 'Javascript'},
+    {id: 6, label: 'Material UI'},
+    {id: 7, label: 'Bootstrap'},
+    {id: 8, label: 'D3'},
+    {id: 9, label: 'JSP'},
   ];
 
   const backendSkills = [
     {id: 1, label: 'Java'},
     {id: 2, label: 'Spring'},
     {id: 3, label: 'Springboot'},
-    {id: 4, label: 'Liquibase'},
-    {id: 5, label: 'Node.js'},
-    {id: 6, label: 'Express'},
+    {id: 4, label: 'Hibernate'},
+    {id: 5, label: 'Liquibase'},
+    {id: 6, label: 'Node.js'},
+    {id: 7, label: 'Express'},
   ];
 
   const databaseSkills = [
